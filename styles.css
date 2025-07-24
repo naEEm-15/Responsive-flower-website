@@ -1,14 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight:400;
   font-style: normal;
 }
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .mar_gin{
     margin: 0 9.5rem;
 }
+.bold{
+    font-weight:800;
+}
+.highlight{
+    color: rgba(233, 90, 8, 1);
+}
+.info_color{
+    color:rgba(0, 0, 0, 0.5)
+}
+
+/* navbar style */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -25,11 +45,28 @@ nav ul li{
     list-style: none;
     
 }
-.bold{
-    font-weight:800;
-}
+
 .navbar-clr{
     color: rgba(137, 135, 161, 1);
+}
+
+/* banner style */
+.banner{
+    display: flex;
+}
+.banner_info{
+    width: 100%; 
+    padding-top: 162px;
+}
+.banner_title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.banner_description{
+    width: 570px;
+}
+.banner_img{
+    padding-top: 106px; ;
 }
 
 /* responsive styling */
