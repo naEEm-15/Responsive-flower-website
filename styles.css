@@ -254,6 +254,24 @@ nav ul li{
 }
 
 
+/* Footer Style */
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 160px;
+}
+div ul li{
+    list-style: none;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+.foot_icons img{
+    margin-right: 24px;
+}
+.twitter_size{
+    width: 30px;
+    height: 30px;
+}
 
 /* responsive styling */
 @media screen and (max-width:430px) {
