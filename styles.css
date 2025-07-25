@@ -16,16 +16,21 @@
 }
 
 .mar_gin{
+    max-width: 1440px;
     margin: 0 9.5rem;
 }
-.bold{
-    font-weight:800;
-}
+
 .highlight{
     color: rgba(233, 90, 8, 1);
 }
 .info_color{
     color:rgba(0, 0, 0, 0.5)
+}
+.card_btn,.subs_btn{
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    font-weight: 600;
+    border: 0;
 }
 
 /* navbar style */
@@ -54,20 +59,65 @@ nav ul li{
 .banner{
     display: flex;
 }
+
 .banner_info{
     width: 100%; 
     padding-top: 162px;
 }
 .banner_title{
     font-size: 4rem;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 .banner_description{
+    font-size: 18px;
     width: 570px;
-    height: 108px;
+    height: 80px;
+    text-align: left;
 }
 .banner_img{
-    padding-top: 106px; ;
+    padding-top: 106px;
+    width: 100%;
+    height: 100%; 
+}
+
+/* plant section style */
+.plant_info{
+    text-align: center;
+    margin-top: 120px;
+}
+.plant_title{
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: 0 auto;
+}
+.plant_description{
+    font-size: 18px;
+    margin-bottom: 3rem;
+    padding: 0 8rem;
+}
+.buy_plants{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 270px;
+    height: 485px;
+    row-gap: 30px;
+    column-gap: 20px;
+    
+}
+.card_content{
+    font-size: 22px;
+    color: rgba(17, 17, 17, 1);
+    text-align: center;
+}
+.card_title{
+    font-weight: 500;
+}
+.card_price{
+    font-weight: 700;
+}
+.card_btn{
+   padding:19px 89px;
 }
 
 /* responsive styling */
@@ -96,7 +146,6 @@ nav ul li{
     .banner{
         flex-direction:column-reverse;
         margin: 0 auto;
-        
     }
     .banner_info{
         padding-top: 28px;
@@ -118,6 +167,37 @@ nav ul li{
         padding-left: 0;
         padding-right: 0;
         
+    }
+
+    /* Plants responsive */
+    .plant_description{
+        padding: 0 1rem;
+        margin-bottom: 1.8rem;
+    }
+    .buy_plants{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        
+    }
+    .buy_plants img{
+        width: 171px;
+        height: 196px;
+    }
+      .card{
+        width: 171px;
+        height: 340px;
+    }
+    .card_title{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .card_price{
+        margin-top: 0;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .card_btn{
+        padding: 16px 39px;
     }
     
 }
